@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Brain, TrendingUp, Users, Clock, AlertTriangle, Zap, Eye, MessageSquare, Repeat2, Heart } from 'lucide-react';
+import { Brain, TrendingUp, Users, AlertTriangle, Zap, Eye, MessageSquare, Repeat2, Heart } from 'lucide-react';
 
 const ThreadripperDemo = () => {
   const [selectedThread, setSelectedThread] = useState(null);
@@ -63,7 +63,7 @@ const ThreadripperDemo = () => {
     }
   ];
 
-  const [threads, setThreads] = useState(mockThreads);
+  const [threads] = useState(mockThreads);
 
   useEffect(() => {
     // Simulate live updates
